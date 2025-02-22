@@ -1,0 +1,24 @@
+[project]
+name = "basline-1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Mostafaali3",email = "mostafaalisarhan@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch (>=2.6.0,<3.0.0)",
+    "torchvision (>=0.21.0,<0.22.0)",
+    "torchaudio (>=2.6.0,<3.0.0)",
+    "opencv-python (>=4.11.0.86,<5.0.0.0)",
+    "pyqtgraph (>=0.13.7,<0.14.0)"
+]
+
+[tool.poetry]
+packages = [{include = "basline_1", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
